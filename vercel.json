@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "form-page/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": ".output/public" }
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
+
