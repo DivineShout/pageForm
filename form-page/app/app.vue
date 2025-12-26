@@ -24,7 +24,7 @@ const sendEmail = async (data: { name?: string; email: string; message?: string 
     `Повідомлення: ${data.message || '(не вказано)'}`
   ].join('\n')
   const body = encodeURIComponent(bodyText)
-  const to = 'vetkor97@gmail.com'
+  const to = '6weeks.13h@gmail.com'
   window.location.href = `mailto:${to}?subject=${subject}&body=${body}`
 
   return Promise.resolve({ ok: true })
